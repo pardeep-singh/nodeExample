@@ -1,13 +1,14 @@
 var express = require('express');
-var fs      = require('fs');
- var app = express();
 
-app.get('/',function(request,response){
-	response.end("hey");
-})
+// Constants
+var DEFAULT_PORT = 8081;
+var PORT = process.env.PORT || DEFAULT_PORT;
 
-var port = 9002
-var ip_address = '127.0.0.1'
-app.listen(port, ip_address, function () {
-  console.log( "Listening on " + ip_address + ", port " + port )
+// App
+var app = express();
+app.get('/', function (req, res) {
+  res.send('Hello World\n');
 });
+
+app.listen(PORT)
+console.log('Running on http://localhost:' + PORT);
