@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/pardeep', function (req, res) {
-  res.send('Hello '+req.params.name);
+  res.send('Hello pardeep');
 });
 
 app.listen(PORT)
