@@ -10,5 +10,9 @@ app.get('/', function (req, res) {
   res.send('Hello New World\n');
 });
 
+app.get('/:name', function (req, res) {
+  res.send('Hello '+req.params.name);
+});
+
 app.listen(PORT)
 console.log('Running on http://localhost:' + PORT);
