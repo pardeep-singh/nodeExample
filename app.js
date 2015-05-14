@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
   res.send('Hello New World\n');
 });
 
-app.get('/:name', function (req, res) {
+app.get('/pardeep', function (req, res) {
   res.send('Hello '+req.params.name);
 });
 
