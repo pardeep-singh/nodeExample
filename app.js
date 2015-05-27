@@ -19,7 +19,7 @@ app.get('/manish', function (req, res) {
 });
 
 app.get('/etc', function (req, res) {
-  res.send('Hello etc');
+  res.send('Hello etc  ');
 });
 
 app.listen(PORT)
